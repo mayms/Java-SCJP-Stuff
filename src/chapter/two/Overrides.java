@@ -2,12 +2,12 @@ package chapter.two;
 
 public class Overrides extends BaseOverrides {
 	/*
-	 * More restrictive return type.
+	 * More restrictive return type and less restrictive access modifier.
 	 * 
 	 * @see chapter.two.BaseOverrides#doStuff()
 	 */
 	@Override
-	protected B doStuff(A param) {
+	public B doStuff(A param) {
 		return new B();
 	}
 
