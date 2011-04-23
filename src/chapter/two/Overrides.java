@@ -25,7 +25,17 @@ class BaseOverrides {
 }
 
 class B extends A {
+
+	/**
+	 * Redefinition of bla() from class A.
+	 */
+	public static void bla() {
+		System.out.println("B.bla()");
+	}
 }
 
 class A {
+	public static void bla() {
+		System.out.println("A.bla()");
+	}
 }
